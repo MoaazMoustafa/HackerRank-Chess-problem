@@ -1,0 +1,38 @@
+######## Good one
+    # print(board)
+    # for one in board:
+    #     print(one)
+    #     print(len(one),sum(one))
+    #     if len(one) % 2 == 0:
+    #         print("even")
+    #         if sum(one) == len(one)/2:
+    #             return "Yes"
+    #         else:
+    #             return "No"
+    #     else:
+    #         print("odd")
+    #         if sum(one) == len(one)/2 + 0.5 or sum(one) == len(one)/2 - 0.5:
+    #             return "Yes"
+    #         else:
+    #             return "No"
+    
+    
+    
+    ##### Best solution until now
+    # for one in board:
+    #     b = all(one[i] != one[i+1] for i in range(len(one)-1)) and one[-1] != one[-2]
+    #     if b:
+    #         return "Yes"
+    #     else:
+    #         return "No"
+        
+        
+        
+
+
+    ####### This is working and I don't know why
+    for i in board:
+        print(i)
+        if(i[0]==i[1]):
+            return "No"
+    return "Yes"
